@@ -1,0 +1,11 @@
+Problem Description:Given the head of a singly linked list, reverse the list, and return the reversed list.
+Solution Summary: 
+	1- determine prev and curr ptrs
+	2- iterate till end is reached
+	3- store next ptr
+	4- reverse next ptr to prev ptr
+	5- update prev and curr ptr for next iteration
+	6- return prev
+Complexity Analysis:
+Time Complexity:(O(n)), where (n) is the number of nodes in the list. Each node is visited once
+Space Complexity: (O(1)), as no additional data structures are used.
