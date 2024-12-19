@@ -1,0 +1,14 @@
+Problem Description:Given ‘head’, the head of a linked list, determine if the linked list has a cycle in it.
+Approach 3: unordered_set
+Solution Summary: 
+	1- if head is null then false
+	2- create an unordered_set
+	3- create a temp node and set to head
+	4- iterate aslong as temp is not null
+	5- find temp in visited. If already in set then no cycle
+	6- insert curr element at end of set
+	7- update temp to next element
+	8- return false
+Complexity Analysis:
+Time Complexity: O(N)
+Space Complexity: O(N)

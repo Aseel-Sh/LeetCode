@@ -1,0 +1,11 @@
+Problem Description:Given ‘head’, the head of a linked list, determine if the linked list has a cycle in it.
+Approach 2: Two pointer without head start
+Solution Summary: 
+	1- set slow to head and fast to head
+	2- iterate as long as fast and fast next is not null 
+	3- update slow and fast for next iteration
+	4- if both equal then return true
+	5- return false
+Complexity Analysis:
+Time Complexity: O(N)
+Space Complexity: O(1)

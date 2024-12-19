@@ -1,0 +1,12 @@
+Problem Description:Given ‘head’, the head of a linked list, determine if the linked list has a cycle in it.
+Approach 1: Two pointer with headstart (Floyd's Cycle Detection Algorithm (Tortoise and Hare))
+Solution Summary: 
+	1- if head is null or next ptr null then false
+	2- set slow ptr to head and fast ptr to next
+	3- iterate aslong as fast and slow dont equal
+	4- if fasts next ptr or next next ptr is null then false
+	5- update slow to next ptr and fast to next next ptr
+	6- return true
+Complexity Analysis:
+Time Complexity: O(N)
+Space Complexity: O(1)
