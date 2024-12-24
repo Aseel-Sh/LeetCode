@@ -1,0 +1,13 @@
+Problem Description:Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+	Solution Summary: 
+	create an empty stack of characters
+	loop through every char in str
+	if its a ({[ then push to our stack
+	else if it its empty or its )}] and the top is not its opening tag then false
+	otherwise remove opening bracket
+	if stack is empty then everything is matched so return that
+
+Complexity Analysis:
+Time Complexity:O(n) This is because we traverse the string once and perform constant time operations for each character.
+Space Complexity: O(n), This is because the worst-case scenario is when all opening brackets are present in the string and the stack will have to store them all.
+
