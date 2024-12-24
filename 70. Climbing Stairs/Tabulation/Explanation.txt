@@ -1,0 +1,14 @@
+Problem Description:You are climbing a staircase. It takes n steps to reach the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+Approach 3: Tabulation
+Solution Summary: 
+	if n = 0 or 1 then just return 1
+	create vector or in and call it dp(n+1)
+	equate dp[0] to dp[1]. And equate dp[1] = 1 Base cases. There's only 1 way to climb 0 or 1 steps
+	Start from step 2 and calculate for all steps up to n
+	equate dp[i] to dp[i -1] + dp[i - 2] the number of ways to climb step i is the sum of both
+	return dp[n]
+
+Complexity Analysis:
+Time Complexity: O(n) 
+Space Complexity: O(n)
+

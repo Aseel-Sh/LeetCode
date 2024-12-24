@@ -1,0 +1,13 @@
+Problem Description:You are climbing a staircase. It takes n steps to reach the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+Approach 2: Memoization
+Solution Summary: 
+	create an unordered map of 2 ints. (memo)
+	if n = 0 or 1 then just return 1 Base case. There's only 1 way to climb 0 or 1 steps
+	check if the result for n steps has been calculated before
+	If not calculate it and save it in memo by recursively finding the sum of n−1 and n−2. 
+	return memo at n
+
+Complexity Analysis:
+Time Complexity: O(n) because each subproblem is solved once
+Space Complexity: O(n)
+Solution:
