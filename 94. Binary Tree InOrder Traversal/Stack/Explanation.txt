@@ -1,0 +1,14 @@
+Problem Description:Given ‘head’, the head of a linked list, determine if the linked list has a cycle in it.
+Approach 2: Stack
+Solution Summary: 
+	initialize empty vector, create TreeNode stack
+	iterate through list, add curr root to stack
+	update root to be left
+	make root be top of stack
+	pop top element and add curr root to vector
+	update root to be right
+	return vector
+
+Complexity Analysis:
+Time Complexity: O(n)
+Space Complexity: O(n)
