@@ -1,0 +1,13 @@
+Problem Description:Given the root of a binary tree, return the inorder traversal of its nodes' values.
+Approach 1: Recursion
+Solution Summary: 
+	Initialize an empty vector to store the result.
+	Call the dfs function to recursively traverse the tree.
+	Base Case: If the current node is null, return from the function.
+	Traverse the left subtree by recursively calling dfs on the left child.
+	Traverse the right subtree by recursively calling dfs on the right child.
+	Visit the root by adding the node's value to the result vector after the left and right children have been processed.
+
+Complexity Analysis:
+Time Complexity: O(n)
+Space Complexity: O(n)

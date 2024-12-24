@@ -1,0 +1,18 @@
+Problem Description:Given the root of a binary tree, return the inorder traversal of its nodes' values.
+Approach 2: Iterative
+Solution Summary: 
+	Initialize an empty vector to store the result.
+	Use two stacks (stack1 and stack2):
+	stack1 is used for traversing the tree in a depth-first manner.
+	stack2 is used to reverse the order of nodes so that the traversal is post-order.
+	Start by pushing the root node onto stack1.
+	While stack1 is not empty:
+	Pop the node from stack1 and push it onto stack2.
+	Push left & right children of the node onto stack1 (left first, so right is processed later). 
+	After the traversal, stack2 will contain the nodes in reverse post-order (root is processed last).
+	Pop all nodes from stack2 and add their values to the result vector.
+
+
+Complexity Analysis:
+Time Complexity: O(n)
+Space Complexity: O(n)
