@@ -1,0 +1,13 @@
+Problem Description:Given the root of a binary tree, return the preorder traversal of its nodes' values.
+Approach 1: Recursion
+Solution Summary: 
+	Initialize an empty vector to store the traversal result.
+	Call the preorder function to recursively traverse the tree.
+	Base Case: If the current node is nullptr, return from the function.
+	Visit the root node by adding its value to the result vector before visiting its children.
+	Recursively traverse the left subtree by calling preorder on the left child.
+	Recursively traverse the right subtree by calling preorder on the right child.e been processed.
+
+Complexity Analysis:
+Time Complexity: O(n)
+Space Complexity: O(n)

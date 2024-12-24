@@ -1,4 +1,4 @@
-Problem Description:Given the root of a binary tree, return the inorder traversal of its nodes' values.
+Problem Description:Given the root of a binary tree, return the postorder traversal of its nodes' values.
 Approach 2: Iterative
 Solution Summary: 
 	Initialize an empty vector to store the result.

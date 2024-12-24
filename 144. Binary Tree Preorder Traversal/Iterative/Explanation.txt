@@ -1,0 +1,15 @@
+Problem Description:Given the root of a binary tree, return the preorder traversal of its nodes' values.
+Approach 2: Iterative
+Solution Summary: 
+	Initialize an empty vector to store the result of the traversal.
+	Use a stack (stack1) to simulate the recursive call stack in a depth-first manner:
+	Push the root node onto the stack.
+	While the stack is not empty, perform the following operations:
+	Pop the top node from the stack (this node will be the current node).
+	Visit the root: Add the node’s value to the result vector.
+	Push right and left in stack (right first, because the stack is LIFO, so left will be processed first).
+	Return the result vector after the traversal is complete.
+
+Complexity Analysis:
+Time Complexity: O(n)
+Space Complexity: O(n)
