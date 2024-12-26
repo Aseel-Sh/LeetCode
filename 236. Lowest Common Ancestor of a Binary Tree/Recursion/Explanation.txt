@@ -1,0 +1,14 @@
+Problem Description:Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
+Approach 1: Recursion
+Solution Summary: 
+	Base Case: if root is null then return null
+	if root = p or q return root. this ensures that if p or q is found it propagates up the recursion stack.
+	Recursively call lowestcommonancestor on the left and right children of the current node.
+	if both the left & right recursive calls return non-null val, it means p & q are found in diff subtrees of the current node. Hence, the current node is their LCA.
+	If only one of the left or right recursive calls is non-null, propagate the non-null value upward
+	If neither subtree contain p or q return null
+	
+
+Complexity Analysis:
+Time Complexity: O(n) The algorithm visits each node exactly once.
+Space Complexity: O(h) tThe maximum depth of the recursion stack is equal to the height of the tree, h. For a balanced tree, this is O(log n) nd for a skewed tree, it is O(n)

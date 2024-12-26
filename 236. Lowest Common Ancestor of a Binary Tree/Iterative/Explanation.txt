@@ -1,0 +1,13 @@
+Problem Description:Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
+Approach 2: Iterative
+Solution Summary: 
+	If the root is null, return null. if the root equals either p or q, return the root.
+	use an unordered map to store the parent of each node do DFS using a stack until nodes p and q are added to the parent map.
+	For each node, add its left and right children to the map with the current node as their parent and push them onto the stack.
+	Traverse the path from p to the root, storing all its ancestors in an unordered set. Traverse the path from q to the root.
+	The first node encountered in q's path that also exists in p's ancestor set is the lowest common ancestor
+	
+
+Complexity Analysis:
+Time Complexity: O(n) 
+Space Complexity: O(n)
