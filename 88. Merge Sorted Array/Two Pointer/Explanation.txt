@@ -1,0 +1,17 @@
+Problem Description:You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
+
+Approach 2: Two Pointers
+Solution Summary: 
+	Start with two pointers, i and j, initialized to m-1 and n-1, respectively.
+	Initialize another pointer, k, to m+n-1. This pointer will track the position in nums1 where the larger element will be placed.
+	Begin iterating from the end of the arrays using i and j.
+	Compare the elements at position i in nums1 and j in nums2.
+	Place the larger of the two elements in nums1 at position k.
+	Decrement the pointer (either i or j) that corresponds to the larger element.
+	Decrement k after placing an element.
+	Repeat this process until all elements from nums2 have been placed in nums1.
+	If there are remaining elements in nums1, no action is needed since they are already in the correct position.
+
+Complexity Analysis:
+Time Complexity: O(m + n) 
+

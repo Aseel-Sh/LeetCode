@@ -1,0 +1,13 @@
+Problem Description:You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
+
+Approach 1: Using STL
+Solution Summary: 
+	Traverse through nums2 and append its elements to the end of nums1 starting from index m.
+	Sort the entire nums1 array using sort() function.
+	
+
+Complexity Analysis:
+Time Complexity: O((m + n) log(m + n))
+Space Complexity: O(1) 
+Solution:
+
